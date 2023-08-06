@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+}
+body {
+  font-size: 18px;
+  font-family: "poppins", "san-serif";
+  /* max-width: 58em; */
+  margin-inline: auto;
+  background: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 85%;
+}
+
+input {
+  padding: 0.6rem 0.3rem;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  margin: 0.5rem;
+  flex: 1;
+}
+.input-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-violet);
+  padding: 1rem 1.5rem;
+  position: relative;
+  width: min(100%, 40rem);
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.input-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background: var(--cyan);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.result .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin-inline: auto;
+}
+.newUrl-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background: var(--cyan);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+h1{
+  color: #fff;
+  justify-content: center;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+ 
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+  }
+  .content {
+    margin-top: 5rem;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-violet);
+    width: 90%;
+  }
+  input {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+    width: 90%;
+  }
+  .input-btn {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+    width: 90%;
+  }
+  
+}
